@@ -1,0 +1,735 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.45 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.45 secs
+ 
+--> Reading design: DCT_2D.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "DCT_2D.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "DCT_2D"
+Output Format                      : NGC
+Target Device                      : xc7z020-1-clg484
+
+---- Source Options
+Top Module Name                    : DCT_2D
+Automatic FSM Extraction           : NO
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : NO
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"../ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\ipcore_dir\Subtracter.v" into library work
+Parsing module <Subtracter>.
+Analyzing Verilog file "D:\ipcore_dir\Multiplier.v" into library work
+Parsing module <Multiplier>.
+Analyzing Verilog file "D:\ipcore_dir\Divider.v" into library work
+Parsing module <Divider>.
+Analyzing Verilog file "D:\ipcore_dir\Adder.v" into library work
+Parsing module <Adder>.
+Analyzing Verilog file "D:\Stage5.v" into library work
+Parsing module <Stage5>.
+Analyzing Verilog file "D:\JPEG_compression\Stage4.v" into library work
+Parsing module <Stage4>.
+Analyzing Verilog file "D:\JPEG_compression\Stage3.v" into library work
+Parsing module <Stage3>.
+Analyzing Verilog file "D:\JPEG_compression\Stage2.v" into library work
+Parsing module <Stage2>.
+Analyzing Verilog file "D:\JPEG_compression\Stage1.v" into library work
+Parsing module <Stage1>.
+Analyzing Verilog file "D:\JPEG_compression\DCT_1D.v" into library work
+Parsing module <DCT_1D>.
+Analyzing Verilog file "D:\DCT_2D.v" into library work
+Parsing module <DCT_2D>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <DCT_2D>.
+
+Elaborating module <DCT_1D>.
+
+Elaborating module <Stage1>.
+
+Elaborating module <Adder>.
+
+Elaborating module <Subtracter>.
+
+Elaborating module <Stage2>.
+
+Elaborating module <Multiplier>.
+
+Elaborating module <Stage3>.
+
+Elaborating module <Stage4>.
+
+Elaborating module <Stage5>.
+
+Elaborating module <Divider>.
+WARNING:HDLCompiler:1127 - "D:\DCT_2D.v" Line 72: Assignment to valid_1D ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\DCT_2D.v" Line 78: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "D:\DCT_2D.v" Line 167: Result of 12-bit expression is truncated to fit in 11-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <DCT_2D>.
+    Related source file is "D:\DCT_2D.v".
+INFO:Xst:3210 - "D:\DCT_2D.v" line 71: Output port <valid> of the instance <dct> is unconnected or connected to loadless signal.
+    Found 32-bit register for signal <B11>.
+    Found 32-bit register for signal <B12>.
+    Found 32-bit register for signal <B13>.
+    Found 32-bit register for signal <B14>.
+    Found 32-bit register for signal <B15>.
+    Found 32-bit register for signal <B16>.
+    Found 32-bit register for signal <B17>.
+    Found 32-bit register for signal <B18>.
+    Found 32-bit register for signal <B21>.
+    Found 32-bit register for signal <B22>.
+    Found 32-bit register for signal <B23>.
+    Found 32-bit register for signal <B24>.
+    Found 32-bit register for signal <B25>.
+    Found 32-bit register for signal <B26>.
+    Found 32-bit register for signal <B27>.
+    Found 32-bit register for signal <B28>.
+    Found 32-bit register for signal <B31>.
+    Found 32-bit register for signal <B32>.
+    Found 32-bit register for signal <B33>.
+    Found 32-bit register for signal <B34>.
+    Found 32-bit register for signal <B35>.
+    Found 32-bit register for signal <B36>.
+    Found 32-bit register for signal <B37>.
+    Found 32-bit register for signal <B38>.
+    Found 32-bit register for signal <B41>.
+    Found 32-bit register for signal <B42>.
+    Found 32-bit register for signal <B43>.
+    Found 32-bit register for signal <B44>.
+    Found 32-bit register for signal <B45>.
+    Found 32-bit register for signal <B46>.
+    Found 32-bit register for signal <B47>.
+    Found 32-bit register for signal <B48>.
+    Found 32-bit register for signal <B51>.
+    Found 32-bit register for signal <B52>.
+    Found 32-bit register for signal <B53>.
+    Found 32-bit register for signal <B54>.
+    Found 32-bit register for signal <B55>.
+    Found 32-bit register for signal <B56>.
+    Found 32-bit register for signal <B57>.
+    Found 32-bit register for signal <B58>.
+    Found 32-bit register for signal <B61>.
+    Found 32-bit register for signal <B62>.
+    Found 32-bit register for signal <B63>.
+    Found 32-bit register for signal <B64>.
+    Found 32-bit register for signal <B65>.
+    Found 32-bit register for signal <B66>.
+    Found 32-bit register for signal <B67>.
+    Found 32-bit register for signal <B68>.
+    Found 32-bit register for signal <B71>.
+    Found 32-bit register for signal <B72>.
+    Found 32-bit register for signal <B73>.
+    Found 32-bit register for signal <B74>.
+    Found 32-bit register for signal <B75>.
+    Found 32-bit register for signal <B76>.
+    Found 32-bit register for signal <B77>.
+    Found 32-bit register for signal <B78>.
+    Found 32-bit register for signal <B81>.
+    Found 32-bit register for signal <B82>.
+    Found 32-bit register for signal <B83>.
+    Found 32-bit register for signal <B84>.
+    Found 32-bit register for signal <B85>.
+    Found 32-bit register for signal <B86>.
+    Found 32-bit register for signal <B87>.
+    Found 32-bit register for signal <B88>.
+    Found 11-bit register for signal <dct_count>.
+    Found 32-bit register for signal <W1>.
+    Found 32-bit register for signal <W2>.
+    Found 32-bit register for signal <W3>.
+    Found 32-bit register for signal <W4>.
+    Found 32-bit register for signal <W5>.
+    Found 32-bit register for signal <W6>.
+    Found 32-bit register for signal <W7>.
+    Found 32-bit register for signal <W8>.
+    Found 1-bit register for signal <valid>.
+    Found 11-bit register for signal <clk_count>.
+    Found 11-bit adder for signal <_n2617> created at line 78.
+    Found 11-bit adder for signal <_n2566> created at line 167.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred 2327 D-type flip-flop(s).
+	inferred 176 Multiplexer(s).
+Unit <DCT_2D> synthesized.
+
+Synthesizing Unit <DCT_1D>.
+    Related source file is "D:\JPEG_compression\DCT_1D.v".
+    Found 1x1-bit multiplier for signal <n0052> created at line 47.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <DCT_1D> synthesized.
+
+Synthesizing Unit <Stage1>.
+    Related source file is "D:\JPEG_compression\Stage1.v".
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 35: Output port <s_axis_a_tready> of the instance <A07> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 35: Output port <s_axis_b_tready> of the instance <A07> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 49: Output port <s_axis_a_tready> of the instance <S07> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 49: Output port <s_axis_b_tready> of the instance <S07> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 63: Output port <s_axis_a_tready> of the instance <A16> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 63: Output port <s_axis_b_tready> of the instance <A16> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 77: Output port <s_axis_a_tready> of the instance <S16> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 77: Output port <s_axis_b_tready> of the instance <S16> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 91: Output port <s_axis_a_tready> of the instance <A25> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 91: Output port <s_axis_b_tready> of the instance <A25> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 105: Output port <s_axis_a_tready> of the instance <S25> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 105: Output port <s_axis_b_tready> of the instance <S25> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 119: Output port <s_axis_a_tready> of the instance <A34> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 119: Output port <s_axis_b_tready> of the instance <A34> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 133: Output port <s_axis_a_tready> of the instance <S34> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 133: Output port <s_axis_b_tready> of the instance <S34> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Stage1> synthesized.
+
+Synthesizing Unit <Stage2>.
+    Related source file is "D:\JPEG_compression\Stage2.v".
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 37: Output port <s_axis_a_tready> of the instance <A03> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 37: Output port <s_axis_b_tready> of the instance <A03> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 52: Output port <s_axis_a_tready> of the instance <S03> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 52: Output port <s_axis_b_tready> of the instance <S03> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 68: Output port <s_axis_a_tready> of the instance <A12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 68: Output port <s_axis_b_tready> of the instance <A12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 84: Output port <s_axis_a_tready> of the instance <S12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 84: Output port <s_axis_b_tready> of the instance <S12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 105: Output port <s_axis_a_tready> of the instance <MN5_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 105: Output port <s_axis_b_tready> of the instance <MN5_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 121: Output port <s_axis_a_tready> of the instance <A56> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 121: Output port <s_axis_b_tready> of the instance <A56> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 135: Output port <s_axis_a_tready> of the instance <MN5_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 135: Output port <s_axis_b_tready> of the instance <MN5_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 151: Output port <s_axis_a_tready> of the instance <AN5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 151: Output port <s_axis_b_tready> of the instance <AN5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 165: Output port <s_axis_a_tready> of the instance <MN6_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 165: Output port <s_axis_b_tready> of the instance <MN6_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 179: Output port <s_axis_a_tready> of the instance <AN6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 179: Output port <s_axis_b_tready> of the instance <AN6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 199: Output port <s_axis_a_tready> of the instance <MN4_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 199: Output port <s_axis_b_tready> of the instance <MN4_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 213: Output port <s_axis_a_tready> of the instance <MN7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 213: Output port <s_axis_b_tready> of the instance <MN7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 227: Output port <s_axis_a_tready> of the instance <A47> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 227: Output port <s_axis_b_tready> of the instance <A47> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 241: Output port <s_axis_a_tready> of the instance <MN4_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 241: Output port <s_axis_b_tready> of the instance <MN4_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 255: Output port <s_axis_a_tready> of the instance <AN4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 255: Output port <s_axis_b_tready> of the instance <AN4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 269: Output port <s_axis_a_tready> of the instance <AN7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 269: Output port <s_axis_b_tready> of the instance <AN7> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Stage2> synthesized.
+
+Synthesizing Unit <Stage3>.
+    Related source file is "D:\JPEG_compression\Stage3.v".
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 33: Output port <s_axis_a_tready> of the instance <A01> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 33: Output port <s_axis_b_tready> of the instance <A01> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 47: Output port <s_axis_a_tready> of the instance <S01> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 47: Output port <s_axis_b_tready> of the instance <S01> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 61: Output port <s_axis_a_tready> of the instance <A46> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 61: Output port <s_axis_b_tready> of the instance <A46> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 75: Output port <s_axis_a_tready> of the instance <S46> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 75: Output port <s_axis_b_tready> of the instance <S46> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 89: Output port <s_axis_a_tready> of the instance <A57> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 89: Output port <s_axis_b_tready> of the instance <A57> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 103: Output port <s_axis_a_tready> of the instance <S57> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 103: Output port <s_axis_b_tready> of the instance <S57> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 129: Output port <s_axis_a_tready> of the instance <MO2_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 129: Output port <s_axis_b_tready> of the instance <MO2_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 143: Output port <s_axis_a_tready> of the instance <AN23> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 143: Output port <s_axis_b_tready> of the instance <AN23> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 157: Output port <s_axis_a_tready> of the instance <MO2_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 157: Output port <s_axis_b_tready> of the instance <MO2_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 171: Output port <s_axis_a_tready> of the instance <AO2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 171: Output port <s_axis_b_tready> of the instance <AO2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 185: Output port <s_axis_a_tready> of the instance <MO3_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 185: Output port <s_axis_b_tready> of the instance <MO3_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 199: Output port <s_axis_a_tready> of the instance <AO3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 199: Output port <s_axis_b_tready> of the instance <AO3> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Stage3> synthesized.
+
+Synthesizing Unit <Stage4>.
+    Related source file is "D:\JPEG_compression\Stage4.v".
+INFO:Xst:3210 - "D:\JPEG_compression\Stage4.v" line 33: Output port <s_axis_a_tready> of the instance <A71> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage4.v" line 33: Output port <s_axis_b_tready> of the instance <A71> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage4.v" line 47: Output port <s_axis_a_tready> of the instance <S71> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage4.v" line 47: Output port <s_axis_b_tready> of the instance <S71> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage4.v" line 61: Output port <s_axis_a_tready> of the instance <M3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage4.v" line 61: Output port <s_axis_b_tready> of the instance <M3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage4.v" line 75: Output port <s_axis_a_tready> of the instance <M5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage4.v" line 75: Output port <s_axis_b_tready> of the instance <M5> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Stage4> synthesized.
+
+Synthesizing Unit <Stage5>.
+    Related source file is "D:\Stage5.v".
+INFO:Xst:3210 - "D:\Stage5.v" line 35: Output port <s_axis_a_tready> of the instance <Div0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 35: Output port <s_axis_b_tready> of the instance <Div0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 49: Output port <s_axis_a_tready> of the instance <Div1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 49: Output port <s_axis_b_tready> of the instance <Div1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 63: Output port <s_axis_a_tready> of the instance <Div2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 63: Output port <s_axis_b_tready> of the instance <Div2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 77: Output port <s_axis_a_tready> of the instance <Div3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 77: Output port <s_axis_b_tready> of the instance <Div3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 91: Output port <s_axis_a_tready> of the instance <Div4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 91: Output port <s_axis_b_tready> of the instance <Div4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 105: Output port <s_axis_a_tready> of the instance <Div5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 105: Output port <s_axis_b_tready> of the instance <Div5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 119: Output port <s_axis_a_tready> of the instance <Div6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 119: Output port <s_axis_b_tready> of the instance <Div6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 133: Output port <s_axis_a_tready> of the instance <Div7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 133: Output port <s_axis_b_tready> of the instance <Div7> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Stage5> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 1x1-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 2
+ 11-bit adder                                          : 2
+# Registers                                            : 75
+ 1-bit register                                        : 1
+ 11-bit register                                       : 2
+ 32-bit register                                       : 72
+# Multiplexers                                         : 176
+ 32-bit 2-to-1 multiplexer                             : 176
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../ipcore_dir/Adder.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <../ipcore_dir/Subtracter.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <../ipcore_dir/Multiplier.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <../ipcore_dir/Divider.ngc>.
+Reading Secure Unit <blk00000001>.
+Loading core <Adder> for timing and area information for instance <A07>.
+Loading core <Subtracter> for timing and area information for instance <S07>.
+Loading core <Adder> for timing and area information for instance <A16>.
+Loading core <Subtracter> for timing and area information for instance <S16>.
+Loading core <Adder> for timing and area information for instance <A25>.
+Loading core <Subtracter> for timing and area information for instance <S25>.
+Loading core <Adder> for timing and area information for instance <A34>.
+Loading core <Subtracter> for timing and area information for instance <S34>.
+Loading core <Adder> for timing and area information for instance <A03>.
+Loading core <Subtracter> for timing and area information for instance <S03>.
+Loading core <Adder> for timing and area information for instance <A12>.
+Loading core <Subtracter> for timing and area information for instance <S12>.
+Loading core <Multiplier> for timing and area information for instance <MN7_0>.
+Loading core <Adder> for timing and area information for instance <A47>.
+Loading core <Adder> for timing and area information for instance <A56>.
+Loading core <Multiplier> for timing and area information for instance <MN6_0>.
+Loading core <Multiplier> for timing and area information for instance <MN5_0>.
+Loading core <Multiplier> for timing and area information for instance <MN4_0>.
+Loading core <Multiplier> for timing and area information for instance <MN5_1>.
+Loading core <Adder> for timing and area information for instance <AN5>.
+Loading core <Adder> for timing and area information for instance <AN6>.
+Loading core <Multiplier> for timing and area information for instance <MN4_1>.
+Loading core <Adder> for timing and area information for instance <AN4>.
+Loading core <Adder> for timing and area information for instance <AN7>.
+Loading core <Adder> for timing and area information for instance <A01>.
+Loading core <Subtracter> for timing and area information for instance <S01>.
+Loading core <Adder> for timing and area information for instance <AN23>.
+Loading core <Multiplier> for timing and area information for instance <MO3_0>.
+Loading core <Multiplier> for timing and area information for instance <MO2_0>.
+Loading core <Adder> for timing and area information for instance <A46>.
+Loading core <Subtracter> for timing and area information for instance <S46>.
+Loading core <Adder> for timing and area information for instance <A57>.
+Loading core <Subtracter> for timing and area information for instance <S57>.
+Loading core <Multiplier> for timing and area information for instance <MO2_1>.
+Loading core <Adder> for timing and area information for instance <AO2>.
+Loading core <Adder> for timing and area information for instance <AO3>.
+Loading core <Adder> for timing and area information for instance <A71>.
+Loading core <Subtracter> for timing and area information for instance <S71>.
+Loading core <Multiplier> for timing and area information for instance <M3>.
+Loading core <Multiplier> for timing and area information for instance <M5>.
+Loading core <Divider> for timing and area information for instance <Div0>.
+Loading core <Divider> for timing and area information for instance <Div1>.
+Loading core <Divider> for timing and area information for instance <Div2>.
+Loading core <Divider> for timing and area information for instance <Div3>.
+Loading core <Divider> for timing and area information for instance <Div4>.
+Loading core <Divider> for timing and area information for instance <Div5>.
+Loading core <Divider> for timing and area information for instance <Div6>.
+Loading core <Divider> for timing and area information for instance <Div7>.
+WARNING:Xst:1426 - The value init of the FF/Latch valid hinder the constant cleaning in the block DCT_2D.
+   You should achieve better results by setting this init to 1.
+
+Synthesizing (advanced) Unit <DCT_2D>.
+The following registers are absorbed into counter <dct_count>: 1 register on signal <dct_count>.
+The following registers are absorbed into counter <clk_count>: 1 register on signal <clk_count>.
+Unit <DCT_2D> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 1x1-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 2
+ 11-bit adder                                          : 2
+# Counters                                             : 2
+ 11-bit up counter                                     : 2
+# Registers                                            : 2305
+ Flip-Flops                                            : 2305
+# Multiplexers                                         : 1385
+ 1-bit 2-to-1 multiplexer                              : 1248
+ 32-bit 2-to-1 multiplexer                             : 137
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch valid hinder the constant cleaning in the block DCT_2D.
+   You should achieve better results by setting this init to 1.
+
+Optimizing unit <DCT_2D> ...
+
+Optimizing unit <DCT_1D> ...
+
+Optimizing unit <Stage1> ...
+
+Optimizing unit <Stage2> ...
+
+Optimizing unit <Stage3> ...
+
+Optimizing unit <Stage5> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DCT_2D, actual ratio is 27.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 2327
+ Flip-Flops                                            : 2327
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : DCT_2D.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 37923
+#      GND                         : 60
+#      INV                         : 207
+#      LUT1                        : 134
+#      LUT2                        : 2802
+#      LUT3                        : 10741
+#      LUT4                        : 2364
+#      LUT5                        : 2423
+#      LUT6                        : 4487
+#      MUXCY                       : 7791
+#      MUXF7                       : 3
+#      VCC                         : 60
+#      XORCY                       : 6851
+# FlipFlops/Latches                : 32001
+#      FD                          : 1353
+#      FDE                         : 27382
+#      FDR                         : 307
+#      FDRE                        : 2959
+# Shift Registers                  : 897
+#      SRLC16E                     : 737
+#      SRLC32E                     : 160
+# DSPs                             : 80
+#      DSP48E1                     : 80
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:           32001  out of  106400    30%  
+ Number of Slice LUTs:                24055  out of  53200    45%  
+    Number used as Logic:             23158  out of  53200    43%  
+    Number used as Memory:              897  out of  17400     5%  
+       Number used as SRL:              897
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:  53985
+   Number with an unused Flip Flop:   21984  out of  53985    40%  
+   Number with an unused LUT:         29930  out of  53985    55%  
+   Number of fully used LUT-FF pairs:  2071  out of  53985     3%  
+   Number of unique control sets:        66
+
+IO Utilization: 
+ Number of IOs:                        4100
+ Number of bonded IOBs:                   0  out of    200     0%  
+
+Specific Feature Utilization:
+ Number of DSP48E1s:                     80  out of    220    36%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | NONE(B22_0)            | 32978 |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 4.255ns (Maximum Frequency: 235.035MHz)
+   Minimum input arrival time before clock: 3.455ns
+   Maximum output required time after clock: 0.282ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.255ns (frequency: 235.035MHz)
+  Total number of paths / destination ports: 711631 / 70144
+-------------------------------------------------------------------------
+Delay:               4.255ns (Levels of Logic = 9)
+  Source:            sec_inst (FF)
+  Destination:       sec_inst (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: sec_inst to sec_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SEC:C->out           30   0.282   0.754  sec_inst (sec_net)
+     end scope: 'dct/s1/S34/blk00000001:m_axis_result_tvalid'
+     end scope: 'dct/s1/S34:m_axis_result_tvalid'
+     LUT4:I1->O            6   0.053   0.446  dct/en_valid_1_AND_45_o_SW0 (N14)
+     LUT6:I5->O            2   0.053   0.419  dct/en_valid_1_AND_45_o_1 (dct/en_valid_1_AND_45_o1)
+     LUT2:I1->O           46   0.053   0.641  dct/s2/en_valid_A47_AND_30_o1 (dct/s2/en_valid_A47_AND_30_o)
+     begin scope: 'dct/s2/MN4_1:s_axis_b_tvalid'
+     begin scope: 'dct/s2/MN4_1/blk00000001:s_axis_b_tvalid'
+     SEC:in->out           1   0.053   0.485  sec_inst (sec_net)
+     SEC:in->out           4   0.053   0.433  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.413  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.000  sec_inst (sec_net)
+     SEC:in                    0.011          sec_inst
+    ----------------------------------------
+    Total                      4.255ns (0.664ns logic, 3.591ns route)
+                                       (15.6% logic, 84.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 39742 / 34037
+-------------------------------------------------------------------------
+Offset:              3.455ns (Levels of Logic = 8)
+  Source:            en (PAD)
+  Destination:       sec_inst (FF)
+  Destination Clock: clk rising
+
+  Data Path: en to sec_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT4:I0->O            6   0.053   0.446  dct/en_valid_1_AND_45_o_SW0 (N14)
+     LUT6:I5->O            2   0.053   0.419  dct/en_valid_1_AND_45_o_1 (dct/en_valid_1_AND_45_o1)
+     LUT2:I1->O           46   0.053   0.641  dct/s2/en_valid_A47_AND_30_o1 (dct/s2/en_valid_A47_AND_30_o)
+     begin scope: 'dct/s2/MN4_1:s_axis_b_tvalid'
+     begin scope: 'dct/s2/MN4_1/blk00000001:s_axis_b_tvalid'
+     SEC:in->out           1   0.053   0.485  sec_inst (sec_net)
+     SEC:in->out           4   0.053   0.433  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.413  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.000  sec_inst (sec_net)
+     SEC:in                    0.011          sec_inst
+    ----------------------------------------
+    Total                      3.455ns (0.618ns logic, 2.837ns route)
+                                       (17.9% logic, 82.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 2049 / 2049
+-------------------------------------------------------------------------
+Offset:              0.282ns (Levels of Logic = 0)
+  Source:            B11_31 (FF)
+  Destination:       B11<31> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: B11_31 to B11<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.282   0.000  B11_31 (B11_31)
+    ----------------------------------------
+    Total                      0.282ns (0.282ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.255|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 82.00 secs
+Total CPU time to Xst completion: 82.72 secs
+ 
+--> 
+
+Total memory usage is 571040 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :   98 (   0 filtered)
+

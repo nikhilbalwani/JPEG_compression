@@ -1,0 +1,75 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/JPEG_compression/Compressor_tb_isim_beh.exe -prj D:/JPEG_compression/Compressor_tb_beh.prj work.Compressor_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/JPEG_compression/../ipcore_dir/Adder.v" into library work
+Analyzing Verilog file "D:/JPEG_compression/../ipcore_dir/Multiplier.v" into library work
+WARNING:HDLCompiler:687 - "D:/JPEG_compression/../ipcore_dir/Multiplier.v" Line 6341: Illegal redeclaration of module <glbl>.
+Analyzing Verilog file "D:/JPEG_compression/../ipcore_dir/Subtracter.v" into library work
+WARNING:HDLCompiler:687 - "D:/JPEG_compression/../ipcore_dir/Subtracter.v" Line 9362: Illegal redeclaration of module <glbl>.
+Analyzing Verilog file "D:/JPEG_compression/../ipcore_dir/Divider.v" into library work
+WARNING:HDLCompiler:687 - "D:/JPEG_compression/../ipcore_dir/Divider.v" Line 30907: Illegal redeclaration of module <glbl>.
+Analyzing Verilog file "D:/JPEG_compression/../ipcore_dir/floatToFixConv.v" into library work
+WARNING:HDLCompiler:687 - "D:/JPEG_compression/../ipcore_dir/floatToFixConv.v" Line 6052: Illegal redeclaration of module <glbl>.
+Analyzing Verilog file "D:/JPEG_compression/../Stage5.v" into library work
+Analyzing Verilog file "D:/JPEG_compression/Stage4.v" into library work
+Analyzing Verilog file "D:/JPEG_compression/Stage3.v" into library work
+Analyzing Verilog file "D:/JPEG_compression/Stage2.v" into library work
+Analyzing Verilog file "D:/JPEG_compression/Stage1.v" into library work
+Analyzing Verilog file "D:/JPEG_compression/DCT_1D.v" into library work
+Analyzing Verilog file "D:/JPEG_compression/../Quantisation.v" into library work
+Analyzing Verilog file "D:/JPEG_compression/../floatTofix.v" into library work
+Analyzing Verilog file "D:/JPEG_compression/../DCT_2D.v" into library work
+Analyzing Verilog file "D:/JPEG_compression/Compressor.v" into library work
+Analyzing Verilog file "D:/JPEG_compression/Compressor_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+WARNING:HDLCompiler:687 - "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module <glbl>.
+Starting static elaboration
+Completed static elaboration
+Compiling module FDE
+Compiling module SRLC16E
+Compiling module LUT6(INIT=64'b010100000101000000...
+Compiling module LUT5(INIT=32'b010000000000000100...
+Compiling module INV
+Compiling module FDRE
+Compiling module LUT2(INIT=4'b0111)
+Compiling module LUT3(INIT=8'b10100010)
+Compiling module LUT4(INIT=16'b1000101011111111)
+Compiling module FD
+Compiling module LUT1(INIT=2'b10)
+Compiling module DSP48E1(ACASCREG=2,ADREG=0,AREG=...
+Compiling module MUXCY
+Compiling module DSP48E1(ADREG=0,DREG=0,INMODEREG...
+Compiling module XORCY
+Compiling module FDR
+Compiling module GND
+Compiling module VCC
+Compiling module Adder
+Compiling module Subtracter
+Compiling module Stage1
+Compiling module DSP48E1(ADREG=0,ALUMODEREG=0,CAR...
+Compiling module DSP48E1(ADREG=0,A_INPUT="CASCADE...
+Compiling module Multiplier
+Compiling module Stage2
+Compiling module Stage3
+Compiling module Stage4
+Compiling module SRLC32E
+Compiling module Divider
+Compiling module Stage5
+Compiling module DCT_1D
+Compiling module DCT_2D
+Compiling module Quantisation
+Compiling module MUXF7
+Compiling module MUXF8
+Compiling module floatToFixConv
+Compiling module floatTofix
+Compiling module Compressor
+Compiling module Compressor_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 16 sub-compilation(s) to finish...
+Compiled 193 Verilog Units
+Built simulation executable D:/JPEG_compression/Compressor_tb_isim_beh.exe
+Fuse Memory Usage: 179992 KB
+Fuse CPU Usage: 5952 ms

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<document OS="nt64" product="ISE" version="14.7">
+
+  <!--The data in this file is primarily intended for consumption by Xilinx tools.
+    The structure and the elements are likely to change over the next few releases.
+    This means code written to parse this file will need to be revisited each subsequent release.-->
+
+  <application stringID="NgdBuild" timeStamp="Thu Nov 16 10:22:02 2017">
+    <section stringID="User_Env">
+      <table stringID="User_EnvVar">
+        <column stringID="variable"/>
+        <column stringID="value"/>
+        <row stringID="row" value="0">
+          <item stringID="variable" value="Path"/>
+          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;C:\Xilinx\14.7\ISE_DS\PlanAhead\bin;C:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;C:\Xilinx\14.7\ISE_DS\common\bin\nt64;C:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\MATLAB\R2013a\runtime\win64;C:\Program Files\MATLAB\R2013a\bin"/>
+        </row>
+        <row stringID="row" value="1">
+          <item stringID="variable" value="PATHEXT"/>
+          <item stringID="value" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
+        </row>
+        <row stringID="row" value="2">
+          <item stringID="variable" value="XILINX"/>
+          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\"/>
+        </row>
+        <row stringID="row" value="3">
+          <item stringID="variable" value="XILINX_DSP"/>
+          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE"/>
+        </row>
+        <row stringID="row" value="4">
+          <item stringID="variable" value="XILINX_EDK"/>
+          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\EDK"/>
+        </row>
+        <row stringID="row" value="5">
+          <item stringID="variable" value="XILINX_PLANAHEAD"/>
+          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\PlanAhead"/>
+        </row>
+      </table>
+      <item stringID="User_EnvOs" value="OS Information">
+        <item stringID="User_EnvOsname" value="Microsoft , 64-bit"/>
+        <item stringID="User_EnvOsrelease" value="major release  (build 9200)"/>
+      </item>
+      <item stringID="User_EnvHost" value="Dell"/>
+      <table stringID="User_EnvCpu">
+        <column stringID="arch"/>
+        <column stringID="speed"/>
+        <row stringID="row" value="0">
+          <item stringID="arch" value="Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz"/>
+          <item stringID="speed" value="2394 MHz"/>
+        </row>
+      </table>
+    </section>
+    <task stringID="NGDBUILD_OPTION_SUMMARY">
+      <section stringID="NGDBUILD_OPTION_SUMMARY">
+        <item DEFAULT="None" label="-intstyle" stringID="NGDBUILD_intstyle" value="ise"/>
+        <item DEFAULT="None" label="-dd" stringID="NGDBUILD_output_dir" value="_ngo"/>
+        <item DEFAULT="None" label="-p" stringID="NGDBUILD_partname" value="xc7z020-clg484-1"/>
+        <item DEFAULT="None" label="-sd" stringID="NGDBUILD_search_path" value="../ipcore_dir"/>
+      </section>
+    </task>
+    <task stringID="NGDBUILD_REPORT">
+      <section stringID="NGDBUILD_DESIGN_SUMMARY">
+        <item dataType="int" stringID="NGDBUILD_NUM_ERRORS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_FILTERED_WARNINGS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_WARNINGS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_FILTERED_INFOS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_INFOS" value="0"/>
+      </section>
+      <section stringID="NGDBUILD_PRE_UNISIM_SUMMARY">
+        <item dataType="int" stringID="NGDBUILD_NUM_DSP48E1" value="80"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FD" value="1353"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDE" value="27382"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDR" value="307"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDRE" value="2959"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_GND" value="60"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_INV" value="207"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="134"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="2802"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="10741"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="2364"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT5" value="2423"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT6" value="4487"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="7791"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXF7" value="3"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_SRLC16E" value="737"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_SRLC32E" value="160"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_VCC" value="60"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_XORCY" value="6851"/>
+      </section>
+      <section stringID="NGDBUILD_POST_UNISIM_SUMMARY">
+        <item dataType="int" stringID="NGDBUILD_NUM_DSP48E1" value="80"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FD" value="1353"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDE" value="27382"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDR" value="307"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDRE" value="2959"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_GND" value="60"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_INV" value="207"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="134"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="2802"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="10741"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="2364"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT5" value="2423"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT6" value="4487"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="7791"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXF7" value="3"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_SRLC16E" value="737"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_SRLC32E" value="160"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_VCC" value="60"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_XORCY" value="6851"/>
+      </section>
+      <section stringID="NGDBUILD_CORE_SUMMARY">
+        <item COUNT="1" stringID="NGDBUILD_CORE" value="floating_point_v6_1, Xilinx CORE Generator 14.7"/>
+        <section stringID="NGDBUILD_CORE_GENERATION_SUMMARY">
+          <section stringID="NGDBUILD_CORE_INSTANCES">
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="Adder">
+              <item stringID="NGDBUILD_CORE_INFO" type="floating_point_v6_1" value="Adder"/>
+              <item C_A_FRACTION_WIDTH="24" C_A_TDATA_WIDTH="32" C_A_TUSER_WIDTH="1" C_A_WIDTH="32" C_B_FRACTION_WIDTH="24" C_B_TDATA_WIDTH="32" C_B_TUSER_WIDTH="1" C_B_WIDTH="32" C_COMPARE_OPERATION="8" C_HAS_ABSOLUTE="0" C_HAS_ACLKEN="0" C_HAS_ADD="1" C_HAS_ARESETN="1" C_HAS_A_TLAST="0" C_HAS_A_TUSER="0" C_HAS_B="1" C_HAS_B_TLAST="0" C_HAS_B_TUSER="0" C_HAS_COMPARE="0" C_HAS_DIVIDE="0" C_HAS_DIVIDE_BY_ZERO="0" C_HAS_EXPONENTIAL="0" C_HAS_FIX_TO_FLT="0" C_HAS_FLT_TO_FIX="0" C_HAS_FLT_TO_FLT="0" C_HAS_INVALID_OP="0" C_HAS_LOGARITHM="0" C_HAS_MULTIPLY="0" C_HAS_OPERATION="0" C_HAS_OPERATION_TLAST="0" C_HAS_OPERATION_TUSER="0" C_HAS_OVERFLOW="0" C_HAS_RECIP="0" C_HAS_RECIP_SQRT="0" C_HAS_RESULT_TLAST="0" C_HAS_RESULT_TUSER="0" C_HAS_SQRT="0" C_HAS_SUBTRACT="0" C_HAS_UNDERFLOW="0" C_LATENCY="12" C_MULT_USAGE="2" C_OPERATION_TDATA_WIDTH="8" C_OPERATION_TUSER_WIDTH="1" C_OPTIMIZATION="1" C_RATE="1" C_RESULT_FRACTION_WIDTH="24" C_RESULT_TDATA_WIDTH="32" C_RESULT_TUSER_WIDTH="1" C_RESULT_WIDTH="32" C_THROTTLE_SCHEME="1" C_TLAST_RESOLUTION="0" C_XDEVICEFAMILY="zynq" stringID="NGDBUILD_CORE_PARAMETERS" value="Adder"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="Divider">
+              <item stringID="NGDBUILD_CORE_INFO" type="floating_point_v6_1" value="Divider"/>
+              <item C_A_FRACTION_WIDTH="24" C_A_TDATA_WIDTH="32" C_A_TUSER_WIDTH="1" C_A_WIDTH="32" C_B_FRACTION_WIDTH="24" C_B_TDATA_WIDTH="32" C_B_TUSER_WIDTH="1" C_B_WIDTH="32" C_COMPARE_OPERATION="8" C_HAS_ABSOLUTE="0" C_HAS_ACLKEN="0" C_HAS_ADD="0" C_HAS_ARESETN="1" C_HAS_A_TLAST="0" C_HAS_A_TUSER="0" C_HAS_B="1" C_HAS_B_TLAST="0" C_HAS_B_TUSER="0" C_HAS_COMPARE="0" C_HAS_DIVIDE="1" C_HAS_DIVIDE_BY_ZERO="0" C_HAS_EXPONENTIAL="0" C_HAS_FIX_TO_FLT="0" C_HAS_FLT_TO_FIX="0" C_HAS_FLT_TO_FLT="0" C_HAS_INVALID_OP="0" C_HAS_LOGARITHM="0" C_HAS_MULTIPLY="0" C_HAS_OPERATION="0" C_HAS_OPERATION_TLAST="0" C_HAS_OPERATION_TUSER="0" C_HAS_OVERFLOW="0" C_HAS_RECIP="0" C_HAS_RECIP_SQRT="0" C_HAS_RESULT_TLAST="0" C_HAS_RESULT_TUSER="0" C_HAS_SQRT="0" C_HAS_SUBTRACT="0" C_HAS_UNDERFLOW="0" C_LATENCY="29" C_MULT_USAGE="0" C_OPERATION_TDATA_WIDTH="8" C_OPERATION_TUSER_WIDTH="1" C_OPTIMIZATION="1" C_RATE="1" C_RESULT_FRACTION_WIDTH="24" C_RESULT_TDATA_WIDTH="32" C_RESULT_TUSER_WIDTH="1" C_RESULT_WIDTH="32" C_THROTTLE_SCHEME="1" C_TLAST_RESOLUTION="0" C_XDEVICEFAMILY="zynq" stringID="NGDBUILD_CORE_PARAMETERS" value="Divider"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="Multiplier">
+              <item stringID="NGDBUILD_CORE_INFO" type="floating_point_v6_1" value="Multiplier"/>
+              <item C_A_FRACTION_WIDTH="24" C_A_TDATA_WIDTH="32" C_A_TUSER_WIDTH="1" C_A_WIDTH="32" C_B_FRACTION_WIDTH="24" C_B_TDATA_WIDTH="32" C_B_TUSER_WIDTH="1" C_B_WIDTH="32" C_COMPARE_OPERATION="8" C_HAS_ABSOLUTE="0" C_HAS_ACLKEN="0" C_HAS_ADD="0" C_HAS_ARESETN="1" C_HAS_A_TLAST="0" C_HAS_A_TUSER="0" C_HAS_B="1" C_HAS_B_TLAST="0" C_HAS_B_TUSER="0" C_HAS_COMPARE="0" C_HAS_DIVIDE="0" C_HAS_DIVIDE_BY_ZERO="0" C_HAS_EXPONENTIAL="0" C_HAS_FIX_TO_FLT="0" C_HAS_FLT_TO_FIX="0" C_HAS_FLT_TO_FLT="0" C_HAS_INVALID_OP="0" C_HAS_LOGARITHM="0" C_HAS_MULTIPLY="1" C_HAS_OPERATION="0" C_HAS_OPERATION_TLAST="0" C_HAS_OPERATION_TUSER="0" C_HAS_OVERFLOW="0" C_HAS_RECIP="0" C_HAS_RECIP_SQRT="0" C_HAS_RESULT_TLAST="0" C_HAS_RESULT_TUSER="0" C_HAS_SQRT="0" C_HAS_SUBTRACT="0" C_HAS_UNDERFLOW="0" C_LATENCY="9" C_MULT_USAGE="2" C_OPERATION_TDATA_WIDTH="8" C_OPERATION_TUSER_WIDTH="1" C_OPTIMIZATION="1" C_RATE="1" C_RESULT_FRACTION_WIDTH="24" C_RESULT_TDATA_WIDTH="32" C_RESULT_TUSER_WIDTH="1" C_RESULT_WIDTH="32" C_THROTTLE_SCHEME="1" C_TLAST_RESOLUTION="0" C_XDEVICEFAMILY="zynq" stringID="NGDBUILD_CORE_PARAMETERS" value="Multiplier"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="Subtracter">
+              <item stringID="NGDBUILD_CORE_INFO" type="floating_point_v6_1" value="Subtracter"/>
+              <item C_A_FRACTION_WIDTH="24" C_A_TDATA_WIDTH="32" C_A_TUSER_WIDTH="1" C_A_WIDTH="32" C_B_FRACTION_WIDTH="24" C_B_TDATA_WIDTH="32" C_B_TUSER_WIDTH="1" C_B_WIDTH="32" C_COMPARE_OPERATION="8" C_HAS_ABSOLUTE="0" C_HAS_ACLKEN="0" C_HAS_ADD="0" C_HAS_ARESETN="1" C_HAS_A_TLAST="0" C_HAS_A_TUSER="0" C_HAS_B="1" C_HAS_B_TLAST="0" C_HAS_B_TUSER="0" C_HAS_COMPARE="0" C_HAS_DIVIDE="0" C_HAS_DIVIDE_BY_ZERO="0" C_HAS_EXPONENTIAL="0" C_HAS_FIX_TO_FLT="0" C_HAS_FLT_TO_FIX="0" C_HAS_FLT_TO_FLT="0" C_HAS_INVALID_OP="0" C_HAS_LOGARITHM="0" C_HAS_MULTIPLY="0" C_HAS_OPERATION="0" C_HAS_OPERATION_TLAST="0" C_HAS_OPERATION_TUSER="0" C_HAS_OVERFLOW="0" C_HAS_RECIP="0" C_HAS_RECIP_SQRT="0" C_HAS_RESULT_TLAST="0" C_HAS_RESULT_TUSER="0" C_HAS_SQRT="0" C_HAS_SUBTRACT="1" C_HAS_UNDERFLOW="0" C_LATENCY="12" C_MULT_USAGE="2" C_OPERATION_TDATA_WIDTH="8" C_OPERATION_TUSER_WIDTH="1" C_OPTIMIZATION="1" C_RATE="1" C_RESULT_FRACTION_WIDTH="24" C_RESULT_TDATA_WIDTH="32" C_RESULT_TUSER_WIDTH="1" C_RESULT_WIDTH="32" C_THROTTLE_SCHEME="1" C_TLAST_RESOLUTION="0" C_XDEVICEFAMILY="zynq" stringID="NGDBUILD_CORE_PARAMETERS" value="Subtracter"/>
+            </scope>
+          </section>
+        </section>
+      </section>
+    </task>
+  </application>
+
+</document>

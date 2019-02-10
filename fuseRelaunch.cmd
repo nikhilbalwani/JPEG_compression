@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/JPEG_compression/Compressor_tb_isim_beh.exe" -prj "D:/JPEG_compression/Compressor_tb_beh.prj" "work.Compressor_tb" "work.glbl" 

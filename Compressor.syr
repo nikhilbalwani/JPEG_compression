@@ -1,0 +1,1122 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: Compressor.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Compressor.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Compressor"
+Output Format                      : NGC
+Target Device                      : xc7z020-1-clg484
+
+---- Source Options
+Top Module Name                    : Compressor
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"../ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\ipcore_dir\Subtracter.v" into library work
+Parsing module <Subtracter>.
+Analyzing Verilog file "D:\ipcore_dir\Multiplier.v" into library work
+Parsing module <Multiplier>.
+Analyzing Verilog file "D:\ipcore_dir\Divider.v" into library work
+Parsing module <Divider>.
+Analyzing Verilog file "D:\ipcore_dir\Adder.v" into library work
+Parsing module <Adder>.
+Analyzing Verilog file "D:\Stage5.v" into library work
+Parsing module <Stage5>.
+Analyzing Verilog file "D:\JPEG_compression\Stage4.v" into library work
+Parsing module <Stage4>.
+Analyzing Verilog file "D:\JPEG_compression\Stage3.v" into library work
+Parsing module <Stage3>.
+Analyzing Verilog file "D:\JPEG_compression\Stage2.v" into library work
+Parsing module <Stage2>.
+Analyzing Verilog file "D:\JPEG_compression\Stage1.v" into library work
+Parsing module <Stage1>.
+Analyzing Verilog file "D:\JPEG_compression\DCT_1D.v" into library work
+Parsing module <DCT_1D>.
+Analyzing Verilog file "D:\ipcore_dir\floatToFixConv.v" into library work
+Parsing module <floatToFixConv>.
+Analyzing Verilog file "D:\Quantisation.v" into library work
+Parsing module <Quantisation>.
+Analyzing Verilog file "D:\floatTofix.v" into library work
+Parsing module <floatTofix>.
+Analyzing Verilog file "D:\DCT_2D.v" into library work
+Parsing module <DCT_2D>.
+Analyzing Verilog file "D:\JPEG_compression\Compressor.v" into library work
+Parsing module <Compressor>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Compressor>.
+
+Elaborating module <DCT_2D>.
+
+Elaborating module <DCT_1D>.
+
+Elaborating module <Stage1>.
+
+Elaborating module <Adder>.
+
+Elaborating module <Subtracter>.
+
+Elaborating module <Stage2>.
+
+Elaborating module <Multiplier>.
+
+Elaborating module <Stage3>.
+
+Elaborating module <Stage4>.
+
+Elaborating module <Stage5>.
+
+Elaborating module <Divider>.
+WARNING:HDLCompiler:1127 - "D:\DCT_2D.v" Line 72: Assignment to valid_1D ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\DCT_2D.v" Line 78: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "D:\DCT_2D.v" Line 167: Result of 12-bit expression is truncated to fit in 11-bit target.
+
+Elaborating module <Quantisation>.
+
+Elaborating module <floatTofix>.
+
+Elaborating module <floatToFixConv>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Compressor>.
+    Related source file is "D:\JPEG_compression\Compressor.v".
+    Summary:
+	no macro.
+Unit <Compressor> synthesized.
+
+Synthesizing Unit <DCT_2D>.
+    Related source file is "D:\DCT_2D.v".
+INFO:Xst:3210 - "D:\DCT_2D.v" line 71: Output port <valid> of the instance <dct> is unconnected or connected to loadless signal.
+    Found 32-bit register for signal <B11>.
+    Found 32-bit register for signal <B12>.
+    Found 32-bit register for signal <B13>.
+    Found 32-bit register for signal <B14>.
+    Found 32-bit register for signal <B15>.
+    Found 32-bit register for signal <B16>.
+    Found 32-bit register for signal <B17>.
+    Found 32-bit register for signal <B18>.
+    Found 32-bit register for signal <B21>.
+    Found 32-bit register for signal <B22>.
+    Found 32-bit register for signal <B23>.
+    Found 32-bit register for signal <B24>.
+    Found 32-bit register for signal <B25>.
+    Found 32-bit register for signal <B26>.
+    Found 32-bit register for signal <B27>.
+    Found 32-bit register for signal <B28>.
+    Found 32-bit register for signal <B31>.
+    Found 32-bit register for signal <B32>.
+    Found 32-bit register for signal <B33>.
+    Found 32-bit register for signal <B34>.
+    Found 32-bit register for signal <B35>.
+    Found 32-bit register for signal <B36>.
+    Found 32-bit register for signal <B37>.
+    Found 32-bit register for signal <B38>.
+    Found 32-bit register for signal <B41>.
+    Found 32-bit register for signal <B42>.
+    Found 32-bit register for signal <B43>.
+    Found 32-bit register for signal <B44>.
+    Found 32-bit register for signal <B45>.
+    Found 32-bit register for signal <B46>.
+    Found 32-bit register for signal <B47>.
+    Found 32-bit register for signal <B48>.
+    Found 32-bit register for signal <B51>.
+    Found 32-bit register for signal <B52>.
+    Found 32-bit register for signal <B53>.
+    Found 32-bit register for signal <B54>.
+    Found 32-bit register for signal <B55>.
+    Found 32-bit register for signal <B56>.
+    Found 32-bit register for signal <B57>.
+    Found 32-bit register for signal <B58>.
+    Found 32-bit register for signal <B61>.
+    Found 32-bit register for signal <B62>.
+    Found 32-bit register for signal <B63>.
+    Found 32-bit register for signal <B64>.
+    Found 32-bit register for signal <B65>.
+    Found 32-bit register for signal <B66>.
+    Found 32-bit register for signal <B67>.
+    Found 32-bit register for signal <B68>.
+    Found 32-bit register for signal <B71>.
+    Found 32-bit register for signal <B72>.
+    Found 32-bit register for signal <B73>.
+    Found 32-bit register for signal <B74>.
+    Found 32-bit register for signal <B75>.
+    Found 32-bit register for signal <B76>.
+    Found 32-bit register for signal <B77>.
+    Found 32-bit register for signal <B78>.
+    Found 32-bit register for signal <B81>.
+    Found 32-bit register for signal <B82>.
+    Found 32-bit register for signal <B83>.
+    Found 32-bit register for signal <B84>.
+    Found 32-bit register for signal <B85>.
+    Found 32-bit register for signal <B86>.
+    Found 32-bit register for signal <B87>.
+    Found 32-bit register for signal <B88>.
+    Found 11-bit register for signal <dct_count>.
+    Found 32-bit register for signal <W1>.
+    Found 32-bit register for signal <W2>.
+    Found 32-bit register for signal <W3>.
+    Found 32-bit register for signal <W4>.
+    Found 32-bit register for signal <W5>.
+    Found 32-bit register for signal <W6>.
+    Found 32-bit register for signal <W7>.
+    Found 32-bit register for signal <W8>.
+    Found 1-bit register for signal <valid>.
+    Found 11-bit register for signal <clk_count>.
+    Found 11-bit adder for signal <_n2617> created at line 78.
+    Found 11-bit adder for signal <_n2566> created at line 167.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred 2327 D-type flip-flop(s).
+	inferred 176 Multiplexer(s).
+Unit <DCT_2D> synthesized.
+
+Synthesizing Unit <DCT_1D>.
+    Related source file is "D:\JPEG_compression\DCT_1D.v".
+    Found 1x1-bit multiplier for signal <n0052> created at line 47.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <DCT_1D> synthesized.
+
+Synthesizing Unit <Stage1>.
+    Related source file is "D:\JPEG_compression\Stage1.v".
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 35: Output port <s_axis_a_tready> of the instance <A07> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 35: Output port <s_axis_b_tready> of the instance <A07> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 49: Output port <s_axis_a_tready> of the instance <S07> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 49: Output port <s_axis_b_tready> of the instance <S07> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 63: Output port <s_axis_a_tready> of the instance <A16> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 63: Output port <s_axis_b_tready> of the instance <A16> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 77: Output port <s_axis_a_tready> of the instance <S16> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 77: Output port <s_axis_b_tready> of the instance <S16> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 91: Output port <s_axis_a_tready> of the instance <A25> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 91: Output port <s_axis_b_tready> of the instance <A25> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 105: Output port <s_axis_a_tready> of the instance <S25> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 105: Output port <s_axis_b_tready> of the instance <S25> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 119: Output port <s_axis_a_tready> of the instance <A34> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 119: Output port <s_axis_b_tready> of the instance <A34> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 133: Output port <s_axis_a_tready> of the instance <S34> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage1.v" line 133: Output port <s_axis_b_tready> of the instance <S34> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Stage1> synthesized.
+
+Synthesizing Unit <Stage2>.
+    Related source file is "D:\JPEG_compression\Stage2.v".
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 37: Output port <s_axis_a_tready> of the instance <A03> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 37: Output port <s_axis_b_tready> of the instance <A03> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 52: Output port <s_axis_a_tready> of the instance <S03> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 52: Output port <s_axis_b_tready> of the instance <S03> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 68: Output port <s_axis_a_tready> of the instance <A12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 68: Output port <s_axis_b_tready> of the instance <A12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 84: Output port <s_axis_a_tready> of the instance <S12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 84: Output port <s_axis_b_tready> of the instance <S12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 105: Output port <s_axis_a_tready> of the instance <MN5_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 105: Output port <s_axis_b_tready> of the instance <MN5_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 121: Output port <s_axis_a_tready> of the instance <A56> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 121: Output port <s_axis_b_tready> of the instance <A56> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 135: Output port <s_axis_a_tready> of the instance <MN5_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 135: Output port <s_axis_b_tready> of the instance <MN5_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 151: Output port <s_axis_a_tready> of the instance <AN5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 151: Output port <s_axis_b_tready> of the instance <AN5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 165: Output port <s_axis_a_tready> of the instance <MN6_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 165: Output port <s_axis_b_tready> of the instance <MN6_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 179: Output port <s_axis_a_tready> of the instance <AN6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 179: Output port <s_axis_b_tready> of the instance <AN6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 199: Output port <s_axis_a_tready> of the instance <MN4_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 199: Output port <s_axis_b_tready> of the instance <MN4_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 213: Output port <s_axis_a_tready> of the instance <MN7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 213: Output port <s_axis_b_tready> of the instance <MN7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 227: Output port <s_axis_a_tready> of the instance <A47> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 227: Output port <s_axis_b_tready> of the instance <A47> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 241: Output port <s_axis_a_tready> of the instance <MN4_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 241: Output port <s_axis_b_tready> of the instance <MN4_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 255: Output port <s_axis_a_tready> of the instance <AN4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 255: Output port <s_axis_b_tready> of the instance <AN4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 269: Output port <s_axis_a_tready> of the instance <AN7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage2.v" line 269: Output port <s_axis_b_tready> of the instance <AN7> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Stage2> synthesized.
+
+Synthesizing Unit <Stage3>.
+    Related source file is "D:\JPEG_compression\Stage3.v".
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 33: Output port <s_axis_a_tready> of the instance <A01> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 33: Output port <s_axis_b_tready> of the instance <A01> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 47: Output port <s_axis_a_tready> of the instance <S01> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 47: Output port <s_axis_b_tready> of the instance <S01> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 61: Output port <s_axis_a_tready> of the instance <A46> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 61: Output port <s_axis_b_tready> of the instance <A46> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 75: Output port <s_axis_a_tready> of the instance <S46> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 75: Output port <s_axis_b_tready> of the instance <S46> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 89: Output port <s_axis_a_tready> of the instance <A57> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 89: Output port <s_axis_b_tready> of the instance <A57> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 103: Output port <s_axis_a_tready> of the instance <S57> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 103: Output port <s_axis_b_tready> of the instance <S57> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 129: Output port <s_axis_a_tready> of the instance <MO2_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 129: Output port <s_axis_b_tready> of the instance <MO2_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 143: Output port <s_axis_a_tready> of the instance <AN23> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 143: Output port <s_axis_b_tready> of the instance <AN23> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 157: Output port <s_axis_a_tready> of the instance <MO2_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 157: Output port <s_axis_b_tready> of the instance <MO2_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 171: Output port <s_axis_a_tready> of the instance <AO2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 171: Output port <s_axis_b_tready> of the instance <AO2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 185: Output port <s_axis_a_tready> of the instance <MO3_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 185: Output port <s_axis_b_tready> of the instance <MO3_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 199: Output port <s_axis_a_tready> of the instance <AO3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage3.v" line 199: Output port <s_axis_b_tready> of the instance <AO3> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Stage3> synthesized.
+
+Synthesizing Unit <Stage4>.
+    Related source file is "D:\JPEG_compression\Stage4.v".
+INFO:Xst:3210 - "D:\JPEG_compression\Stage4.v" line 33: Output port <s_axis_a_tready> of the instance <A71> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage4.v" line 33: Output port <s_axis_b_tready> of the instance <A71> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage4.v" line 47: Output port <s_axis_a_tready> of the instance <S71> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage4.v" line 47: Output port <s_axis_b_tready> of the instance <S71> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage4.v" line 61: Output port <s_axis_a_tready> of the instance <M3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage4.v" line 61: Output port <s_axis_b_tready> of the instance <M3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage4.v" line 75: Output port <s_axis_a_tready> of the instance <M5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\JPEG_compression\Stage4.v" line 75: Output port <s_axis_b_tready> of the instance <M5> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Stage4> synthesized.
+
+Synthesizing Unit <Stage5>.
+    Related source file is "D:\Stage5.v".
+INFO:Xst:3210 - "D:\Stage5.v" line 35: Output port <s_axis_a_tready> of the instance <Div0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 35: Output port <s_axis_b_tready> of the instance <Div0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 49: Output port <s_axis_a_tready> of the instance <Div1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 49: Output port <s_axis_b_tready> of the instance <Div1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 63: Output port <s_axis_a_tready> of the instance <Div2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 63: Output port <s_axis_b_tready> of the instance <Div2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 77: Output port <s_axis_a_tready> of the instance <Div3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 77: Output port <s_axis_b_tready> of the instance <Div3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 91: Output port <s_axis_a_tready> of the instance <Div4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 91: Output port <s_axis_b_tready> of the instance <Div4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 105: Output port <s_axis_a_tready> of the instance <Div5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 105: Output port <s_axis_b_tready> of the instance <Div5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 119: Output port <s_axis_a_tready> of the instance <Div6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 119: Output port <s_axis_b_tready> of the instance <Div6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 133: Output port <s_axis_a_tready> of the instance <Div7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Stage5.v" line 133: Output port <s_axis_b_tready> of the instance <Div7> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Stage5> synthesized.
+
+Synthesizing Unit <Quantisation>.
+    Related source file is "D:\Quantisation.v".
+INFO:Xst:3210 - "D:\Quantisation.v" line 165: Output port <s_axis_a_tready> of the instance <d11> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 165: Output port <s_axis_b_tready> of the instance <d11> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 179: Output port <s_axis_a_tready> of the instance <d12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 179: Output port <s_axis_b_tready> of the instance <d12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 192: Output port <s_axis_a_tready> of the instance <d13> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 192: Output port <s_axis_b_tready> of the instance <d13> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 205: Output port <s_axis_a_tready> of the instance <d14> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 205: Output port <s_axis_b_tready> of the instance <d14> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 219: Output port <s_axis_a_tready> of the instance <d15> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 219: Output port <s_axis_b_tready> of the instance <d15> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 232: Output port <s_axis_a_tready> of the instance <d16> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 232: Output port <s_axis_b_tready> of the instance <d16> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 245: Output port <s_axis_a_tready> of the instance <d17> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 245: Output port <s_axis_b_tready> of the instance <d17> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 258: Output port <s_axis_a_tready> of the instance <d18> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 258: Output port <s_axis_b_tready> of the instance <d18> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 271: Output port <s_axis_a_tready> of the instance <d21> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 271: Output port <s_axis_b_tready> of the instance <d21> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 284: Output port <s_axis_a_tready> of the instance <d22> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 284: Output port <s_axis_b_tready> of the instance <d22> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 297: Output port <s_axis_a_tready> of the instance <d23> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 297: Output port <s_axis_b_tready> of the instance <d23> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 310: Output port <s_axis_a_tready> of the instance <d24> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 310: Output port <s_axis_b_tready> of the instance <d24> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 323: Output port <s_axis_a_tready> of the instance <d25> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 323: Output port <s_axis_b_tready> of the instance <d25> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 336: Output port <s_axis_a_tready> of the instance <d26> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 336: Output port <s_axis_b_tready> of the instance <d26> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 349: Output port <s_axis_a_tready> of the instance <d27> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 349: Output port <s_axis_b_tready> of the instance <d27> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 362: Output port <s_axis_a_tready> of the instance <d28> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 362: Output port <s_axis_b_tready> of the instance <d28> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 375: Output port <s_axis_a_tready> of the instance <d31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 375: Output port <s_axis_b_tready> of the instance <d31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 388: Output port <s_axis_a_tready> of the instance <d32> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 388: Output port <s_axis_b_tready> of the instance <d32> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 401: Output port <s_axis_a_tready> of the instance <d33> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 401: Output port <s_axis_b_tready> of the instance <d33> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 414: Output port <s_axis_a_tready> of the instance <d34> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 414: Output port <s_axis_b_tready> of the instance <d34> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 427: Output port <s_axis_a_tready> of the instance <d35> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 427: Output port <s_axis_b_tready> of the instance <d35> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 440: Output port <s_axis_a_tready> of the instance <d36> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 440: Output port <s_axis_b_tready> of the instance <d36> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 453: Output port <s_axis_a_tready> of the instance <d37> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 453: Output port <s_axis_b_tready> of the instance <d37> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 466: Output port <s_axis_a_tready> of the instance <d38> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 466: Output port <s_axis_b_tready> of the instance <d38> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 479: Output port <s_axis_a_tready> of the instance <d41> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 479: Output port <s_axis_b_tready> of the instance <d41> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 492: Output port <s_axis_a_tready> of the instance <d42> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 492: Output port <s_axis_b_tready> of the instance <d42> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 505: Output port <s_axis_a_tready> of the instance <d43> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 505: Output port <s_axis_b_tready> of the instance <d43> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 518: Output port <s_axis_a_tready> of the instance <d44> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 518: Output port <s_axis_b_tready> of the instance <d44> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 531: Output port <s_axis_a_tready> of the instance <d45> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 531: Output port <s_axis_b_tready> of the instance <d45> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 544: Output port <s_axis_a_tready> of the instance <d46> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 544: Output port <s_axis_b_tready> of the instance <d46> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 557: Output port <s_axis_a_tready> of the instance <d47> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 557: Output port <s_axis_b_tready> of the instance <d47> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 570: Output port <s_axis_a_tready> of the instance <d48> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 570: Output port <s_axis_b_tready> of the instance <d48> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 583: Output port <s_axis_a_tready> of the instance <d51> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 583: Output port <s_axis_b_tready> of the instance <d51> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 596: Output port <s_axis_a_tready> of the instance <d52> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 596: Output port <s_axis_b_tready> of the instance <d52> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 609: Output port <s_axis_a_tready> of the instance <d53> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 609: Output port <s_axis_b_tready> of the instance <d53> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 622: Output port <s_axis_a_tready> of the instance <d54> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 622: Output port <s_axis_b_tready> of the instance <d54> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 635: Output port <s_axis_a_tready> of the instance <d55> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 635: Output port <s_axis_b_tready> of the instance <d55> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 648: Output port <s_axis_a_tready> of the instance <d56> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 648: Output port <s_axis_b_tready> of the instance <d56> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 661: Output port <s_axis_a_tready> of the instance <d57> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 661: Output port <s_axis_b_tready> of the instance <d57> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 674: Output port <s_axis_a_tready> of the instance <d58> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 674: Output port <s_axis_b_tready> of the instance <d58> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 687: Output port <s_axis_a_tready> of the instance <d61> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 687: Output port <s_axis_b_tready> of the instance <d61> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 700: Output port <s_axis_a_tready> of the instance <d62> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 700: Output port <s_axis_b_tready> of the instance <d62> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 713: Output port <s_axis_a_tready> of the instance <d63> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 713: Output port <s_axis_b_tready> of the instance <d63> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 726: Output port <s_axis_a_tready> of the instance <d64> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 726: Output port <s_axis_b_tready> of the instance <d64> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 739: Output port <s_axis_a_tready> of the instance <d65> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 739: Output port <s_axis_b_tready> of the instance <d65> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 752: Output port <s_axis_a_tready> of the instance <d66> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 752: Output port <s_axis_b_tready> of the instance <d66> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 765: Output port <s_axis_a_tready> of the instance <d67> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 765: Output port <s_axis_b_tready> of the instance <d67> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 778: Output port <s_axis_a_tready> of the instance <d68> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 778: Output port <s_axis_b_tready> of the instance <d68> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 791: Output port <s_axis_a_tready> of the instance <d71> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 791: Output port <s_axis_b_tready> of the instance <d71> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 804: Output port <s_axis_a_tready> of the instance <d72> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 804: Output port <s_axis_b_tready> of the instance <d72> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 817: Output port <s_axis_a_tready> of the instance <d73> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 817: Output port <s_axis_b_tready> of the instance <d73> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 830: Output port <s_axis_a_tready> of the instance <d74> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 830: Output port <s_axis_b_tready> of the instance <d74> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 843: Output port <s_axis_a_tready> of the instance <d75> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 843: Output port <s_axis_b_tready> of the instance <d75> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 856: Output port <s_axis_a_tready> of the instance <d76> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 856: Output port <s_axis_b_tready> of the instance <d76> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 869: Output port <s_axis_a_tready> of the instance <d77> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 869: Output port <s_axis_b_tready> of the instance <d77> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 882: Output port <s_axis_a_tready> of the instance <d78> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 882: Output port <s_axis_b_tready> of the instance <d78> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 895: Output port <s_axis_a_tready> of the instance <d81> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 895: Output port <s_axis_b_tready> of the instance <d81> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 908: Output port <s_axis_a_tready> of the instance <d82> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 908: Output port <s_axis_b_tready> of the instance <d82> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 921: Output port <s_axis_a_tready> of the instance <d83> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 921: Output port <s_axis_b_tready> of the instance <d83> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 934: Output port <s_axis_a_tready> of the instance <d84> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 934: Output port <s_axis_b_tready> of the instance <d84> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 947: Output port <s_axis_a_tready> of the instance <d85> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 947: Output port <s_axis_b_tready> of the instance <d85> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 960: Output port <s_axis_a_tready> of the instance <d86> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 960: Output port <s_axis_b_tready> of the instance <d86> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 973: Output port <s_axis_a_tready> of the instance <d87> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 973: Output port <s_axis_b_tready> of the instance <d87> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 986: Output port <s_axis_a_tready> of the instance <d88> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Quantisation.v" line 986: Output port <s_axis_b_tready> of the instance <d88> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Quantisation> synthesized.
+
+Synthesizing Unit <floatTofix>.
+    Related source file is "D:\floatTofix.v".
+INFO:Xst:3210 - "D:\floatTofix.v" line 74: Output port <s_axis_a_tready> of the instance <conv11> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 86: Output port <s_axis_a_tready> of the instance <conv12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 98: Output port <s_axis_a_tready> of the instance <conv13> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 110: Output port <s_axis_a_tready> of the instance <conv14> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 122: Output port <s_axis_a_tready> of the instance <conv15> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 134: Output port <s_axis_a_tready> of the instance <conv16> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 146: Output port <s_axis_a_tready> of the instance <conv17> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 158: Output port <s_axis_a_tready> of the instance <conv18> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 170: Output port <s_axis_a_tready> of the instance <conv21> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 182: Output port <s_axis_a_tready> of the instance <conv22> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 194: Output port <s_axis_a_tready> of the instance <conv23> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 206: Output port <s_axis_a_tready> of the instance <conv24> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 218: Output port <s_axis_a_tready> of the instance <conv25> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 230: Output port <s_axis_a_tready> of the instance <conv26> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 242: Output port <s_axis_a_tready> of the instance <conv27> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 254: Output port <s_axis_a_tready> of the instance <conv28> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 266: Output port <s_axis_a_tready> of the instance <conv31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 278: Output port <s_axis_a_tready> of the instance <conv32> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 290: Output port <s_axis_a_tready> of the instance <conv33> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 302: Output port <s_axis_a_tready> of the instance <conv34> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 314: Output port <s_axis_a_tready> of the instance <conv35> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 326: Output port <s_axis_a_tready> of the instance <conv36> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 338: Output port <s_axis_a_tready> of the instance <conv37> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 350: Output port <s_axis_a_tready> of the instance <conv38> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 362: Output port <s_axis_a_tready> of the instance <conv41> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 374: Output port <s_axis_a_tready> of the instance <conv42> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 386: Output port <s_axis_a_tready> of the instance <conv43> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 398: Output port <s_axis_a_tready> of the instance <conv44> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 410: Output port <s_axis_a_tready> of the instance <conv45> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 422: Output port <s_axis_a_tready> of the instance <conv46> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 434: Output port <s_axis_a_tready> of the instance <conv47> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 446: Output port <s_axis_a_tready> of the instance <conv48> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 458: Output port <s_axis_a_tready> of the instance <conv51> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 470: Output port <s_axis_a_tready> of the instance <conv52> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 482: Output port <s_axis_a_tready> of the instance <conv53> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 494: Output port <s_axis_a_tready> of the instance <conv54> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 506: Output port <s_axis_a_tready> of the instance <conv55> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 518: Output port <s_axis_a_tready> of the instance <conv56> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 530: Output port <s_axis_a_tready> of the instance <conv57> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 542: Output port <s_axis_a_tready> of the instance <conv58> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 554: Output port <s_axis_a_tready> of the instance <conv61> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 566: Output port <s_axis_a_tready> of the instance <conv62> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 578: Output port <s_axis_a_tready> of the instance <conv63> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 590: Output port <s_axis_a_tready> of the instance <conv64> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 602: Output port <s_axis_a_tready> of the instance <conv65> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 614: Output port <s_axis_a_tready> of the instance <conv66> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 626: Output port <s_axis_a_tready> of the instance <conv67> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 638: Output port <s_axis_a_tready> of the instance <conv68> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 650: Output port <s_axis_a_tready> of the instance <conv71> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 662: Output port <s_axis_a_tready> of the instance <conv72> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 674: Output port <s_axis_a_tready> of the instance <conv73> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 686: Output port <s_axis_a_tready> of the instance <conv74> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 698: Output port <s_axis_a_tready> of the instance <conv75> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 710: Output port <s_axis_a_tready> of the instance <conv76> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 722: Output port <s_axis_a_tready> of the instance <conv77> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 734: Output port <s_axis_a_tready> of the instance <conv78> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 746: Output port <s_axis_a_tready> of the instance <conv81> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 758: Output port <s_axis_a_tready> of the instance <conv82> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 770: Output port <s_axis_a_tready> of the instance <conv83> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 782: Output port <s_axis_a_tready> of the instance <conv84> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 794: Output port <s_axis_a_tready> of the instance <conv85> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 806: Output port <s_axis_a_tready> of the instance <conv86> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 818: Output port <s_axis_a_tready> of the instance <conv87> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\floatTofix.v" line 830: Output port <s_axis_a_tready> of the instance <conv88> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <floatTofix> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 1x1-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 2
+ 11-bit adder                                          : 2
+# Registers                                            : 75
+ 1-bit register                                        : 1
+ 11-bit register                                       : 2
+ 32-bit register                                       : 72
+# Multiplexers                                         : 176
+ 32-bit 2-to-1 multiplexer                             : 176
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../ipcore_dir/Adder.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <../ipcore_dir/Subtracter.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <../ipcore_dir/Multiplier.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <../ipcore_dir/Divider.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <../ipcore_dir/floatToFixConv.ngc>.
+Reading Secure Unit <blk00000001>.
+Loading core <Adder> for timing and area information for instance <A07>.
+Loading core <Subtracter> for timing and area information for instance <S07>.
+Loading core <Adder> for timing and area information for instance <A16>.
+Loading core <Subtracter> for timing and area information for instance <S16>.
+Loading core <Adder> for timing and area information for instance <A25>.
+Loading core <Subtracter> for timing and area information for instance <S25>.
+Loading core <Adder> for timing and area information for instance <A34>.
+Loading core <Subtracter> for timing and area information for instance <S34>.
+Loading core <Adder> for timing and area information for instance <A03>.
+Loading core <Subtracter> for timing and area information for instance <S03>.
+Loading core <Adder> for timing and area information for instance <A12>.
+Loading core <Subtracter> for timing and area information for instance <S12>.
+Loading core <Multiplier> for timing and area information for instance <MN7_0>.
+Loading core <Adder> for timing and area information for instance <A47>.
+Loading core <Adder> for timing and area information for instance <A56>.
+Loading core <Multiplier> for timing and area information for instance <MN6_0>.
+Loading core <Multiplier> for timing and area information for instance <MN5_0>.
+Loading core <Multiplier> for timing and area information for instance <MN4_0>.
+Loading core <Multiplier> for timing and area information for instance <MN5_1>.
+Loading core <Adder> for timing and area information for instance <AN5>.
+Loading core <Adder> for timing and area information for instance <AN6>.
+Loading core <Multiplier> for timing and area information for instance <MN4_1>.
+Loading core <Adder> for timing and area information for instance <AN4>.
+Loading core <Adder> for timing and area information for instance <AN7>.
+Loading core <Adder> for timing and area information for instance <A01>.
+Loading core <Subtracter> for timing and area information for instance <S01>.
+Loading core <Adder> for timing and area information for instance <AN23>.
+Loading core <Multiplier> for timing and area information for instance <MO3_0>.
+Loading core <Multiplier> for timing and area information for instance <MO2_0>.
+Loading core <Adder> for timing and area information for instance <A46>.
+Loading core <Subtracter> for timing and area information for instance <S46>.
+Loading core <Adder> for timing and area information for instance <A57>.
+Loading core <Subtracter> for timing and area information for instance <S57>.
+Loading core <Multiplier> for timing and area information for instance <MO2_1>.
+Loading core <Adder> for timing and area information for instance <AO2>.
+Loading core <Adder> for timing and area information for instance <AO3>.
+Loading core <Adder> for timing and area information for instance <A71>.
+Loading core <Subtracter> for timing and area information for instance <S71>.
+Loading core <Multiplier> for timing and area information for instance <M3>.
+Loading core <Multiplier> for timing and area information for instance <M5>.
+Loading core <Divider> for timing and area information for instance <Div0>.
+Loading core <Divider> for timing and area information for instance <Div1>.
+Loading core <Divider> for timing and area information for instance <Div2>.
+Loading core <Divider> for timing and area information for instance <Div3>.
+Loading core <Divider> for timing and area information for instance <Div4>.
+Loading core <Divider> for timing and area information for instance <Div5>.
+Loading core <Divider> for timing and area information for instance <Div6>.
+Loading core <Divider> for timing and area information for instance <Div7>.
+Loading core <Divider> for timing and area information for instance <d11>.
+Loading core <Divider> for timing and area information for instance <d12>.
+Loading core <Divider> for timing and area information for instance <d13>.
+Loading core <Divider> for timing and area information for instance <d14>.
+Loading core <Divider> for timing and area information for instance <d15>.
+Loading core <Divider> for timing and area information for instance <d16>.
+Loading core <Divider> for timing and area information for instance <d17>.
+Loading core <Divider> for timing and area information for instance <d18>.
+Loading core <Divider> for timing and area information for instance <d21>.
+Loading core <Divider> for timing and area information for instance <d22>.
+Loading core <Divider> for timing and area information for instance <d23>.
+Loading core <Divider> for timing and area information for instance <d24>.
+Loading core <Divider> for timing and area information for instance <d25>.
+Loading core <Divider> for timing and area information for instance <d26>.
+Loading core <Divider> for timing and area information for instance <d27>.
+Loading core <Divider> for timing and area information for instance <d28>.
+Loading core <Divider> for timing and area information for instance <d31>.
+Loading core <Divider> for timing and area information for instance <d32>.
+Loading core <Divider> for timing and area information for instance <d33>.
+Loading core <Divider> for timing and area information for instance <d34>.
+Loading core <Divider> for timing and area information for instance <d35>.
+Loading core <Divider> for timing and area information for instance <d36>.
+Loading core <Divider> for timing and area information for instance <d37>.
+Loading core <Divider> for timing and area information for instance <d38>.
+Loading core <Divider> for timing and area information for instance <d41>.
+Loading core <Divider> for timing and area information for instance <d42>.
+Loading core <Divider> for timing and area information for instance <d43>.
+Loading core <Divider> for timing and area information for instance <d44>.
+Loading core <Divider> for timing and area information for instance <d45>.
+Loading core <Divider> for timing and area information for instance <d46>.
+Loading core <Divider> for timing and area information for instance <d47>.
+Loading core <Divider> for timing and area information for instance <d48>.
+Loading core <Divider> for timing and area information for instance <d51>.
+Loading core <Divider> for timing and area information for instance <d52>.
+Loading core <Divider> for timing and area information for instance <d53>.
+Loading core <Divider> for timing and area information for instance <d54>.
+Loading core <Divider> for timing and area information for instance <d55>.
+Loading core <Divider> for timing and area information for instance <d56>.
+Loading core <Divider> for timing and area information for instance <d57>.
+Loading core <Divider> for timing and area information for instance <d58>.
+Loading core <Divider> for timing and area information for instance <d61>.
+Loading core <Divider> for timing and area information for instance <d62>.
+Loading core <Divider> for timing and area information for instance <d63>.
+Loading core <Divider> for timing and area information for instance <d64>.
+Loading core <Divider> for timing and area information for instance <d65>.
+Loading core <Divider> for timing and area information for instance <d66>.
+Loading core <Divider> for timing and area information for instance <d67>.
+Loading core <Divider> for timing and area information for instance <d68>.
+Loading core <Divider> for timing and area information for instance <d71>.
+Loading core <Divider> for timing and area information for instance <d72>.
+Loading core <Divider> for timing and area information for instance <d73>.
+Loading core <Divider> for timing and area information for instance <d74>.
+Loading core <Divider> for timing and area information for instance <d75>.
+Loading core <Divider> for timing and area information for instance <d76>.
+Loading core <Divider> for timing and area information for instance <d77>.
+Loading core <Divider> for timing and area information for instance <d78>.
+Loading core <Divider> for timing and area information for instance <d81>.
+Loading core <Divider> for timing and area information for instance <d82>.
+Loading core <Divider> for timing and area information for instance <d83>.
+Loading core <Divider> for timing and area information for instance <d84>.
+Loading core <Divider> for timing and area information for instance <d85>.
+Loading core <Divider> for timing and area information for instance <d86>.
+Loading core <Divider> for timing and area information for instance <d87>.
+Loading core <Divider> for timing and area information for instance <d88>.
+Loading core <floatToFixConv> for timing and area information for instance <conv11>.
+Loading core <floatToFixConv> for timing and area information for instance <conv12>.
+Loading core <floatToFixConv> for timing and area information for instance <conv13>.
+Loading core <floatToFixConv> for timing and area information for instance <conv14>.
+Loading core <floatToFixConv> for timing and area information for instance <conv15>.
+Loading core <floatToFixConv> for timing and area information for instance <conv16>.
+Loading core <floatToFixConv> for timing and area information for instance <conv17>.
+Loading core <floatToFixConv> for timing and area information for instance <conv18>.
+Loading core <floatToFixConv> for timing and area information for instance <conv21>.
+Loading core <floatToFixConv> for timing and area information for instance <conv22>.
+Loading core <floatToFixConv> for timing and area information for instance <conv23>.
+Loading core <floatToFixConv> for timing and area information for instance <conv24>.
+Loading core <floatToFixConv> for timing and area information for instance <conv25>.
+Loading core <floatToFixConv> for timing and area information for instance <conv26>.
+Loading core <floatToFixConv> for timing and area information for instance <conv27>.
+Loading core <floatToFixConv> for timing and area information for instance <conv28>.
+Loading core <floatToFixConv> for timing and area information for instance <conv31>.
+Loading core <floatToFixConv> for timing and area information for instance <conv32>.
+Loading core <floatToFixConv> for timing and area information for instance <conv33>.
+Loading core <floatToFixConv> for timing and area information for instance <conv34>.
+Loading core <floatToFixConv> for timing and area information for instance <conv35>.
+Loading core <floatToFixConv> for timing and area information for instance <conv36>.
+Loading core <floatToFixConv> for timing and area information for instance <conv37>.
+Loading core <floatToFixConv> for timing and area information for instance <conv38>.
+Loading core <floatToFixConv> for timing and area information for instance <conv41>.
+Loading core <floatToFixConv> for timing and area information for instance <conv42>.
+Loading core <floatToFixConv> for timing and area information for instance <conv43>.
+Loading core <floatToFixConv> for timing and area information for instance <conv44>.
+Loading core <floatToFixConv> for timing and area information for instance <conv45>.
+Loading core <floatToFixConv> for timing and area information for instance <conv46>.
+Loading core <floatToFixConv> for timing and area information for instance <conv47>.
+Loading core <floatToFixConv> for timing and area information for instance <conv48>.
+Loading core <floatToFixConv> for timing and area information for instance <conv51>.
+Loading core <floatToFixConv> for timing and area information for instance <conv52>.
+Loading core <floatToFixConv> for timing and area information for instance <conv53>.
+Loading core <floatToFixConv> for timing and area information for instance <conv54>.
+Loading core <floatToFixConv> for timing and area information for instance <conv55>.
+Loading core <floatToFixConv> for timing and area information for instance <conv56>.
+Loading core <floatToFixConv> for timing and area information for instance <conv57>.
+Loading core <floatToFixConv> for timing and area information for instance <conv58>.
+Loading core <floatToFixConv> for timing and area information for instance <conv61>.
+Loading core <floatToFixConv> for timing and area information for instance <conv62>.
+Loading core <floatToFixConv> for timing and area information for instance <conv63>.
+Loading core <floatToFixConv> for timing and area information for instance <conv64>.
+Loading core <floatToFixConv> for timing and area information for instance <conv65>.
+Loading core <floatToFixConv> for timing and area information for instance <conv66>.
+Loading core <floatToFixConv> for timing and area information for instance <conv67>.
+Loading core <floatToFixConv> for timing and area information for instance <conv68>.
+Loading core <floatToFixConv> for timing and area information for instance <conv71>.
+Loading core <floatToFixConv> for timing and area information for instance <conv72>.
+Loading core <floatToFixConv> for timing and area information for instance <conv73>.
+Loading core <floatToFixConv> for timing and area information for instance <conv74>.
+Loading core <floatToFixConv> for timing and area information for instance <conv75>.
+Loading core <floatToFixConv> for timing and area information for instance <conv76>.
+Loading core <floatToFixConv> for timing and area information for instance <conv77>.
+Loading core <floatToFixConv> for timing and area information for instance <conv78>.
+Loading core <floatToFixConv> for timing and area information for instance <conv81>.
+Loading core <floatToFixConv> for timing and area information for instance <conv82>.
+Loading core <floatToFixConv> for timing and area information for instance <conv83>.
+Loading core <floatToFixConv> for timing and area information for instance <conv84>.
+Loading core <floatToFixConv> for timing and area information for instance <conv85>.
+Loading core <floatToFixConv> for timing and area information for instance <conv86>.
+Loading core <floatToFixConv> for timing and area information for instance <conv87>.
+Loading core <floatToFixConv> for timing and area information for instance <conv88>.
+WARNING:Xst:1426 - The value init of the FF/Latch valid hinder the constant cleaning in the block dct.
+   You should achieve better results by setting this init to 1.
+
+Synthesizing (advanced) Unit <DCT_2D>.
+The following registers are absorbed into counter <dct_count>: 1 register on signal <dct_count>.
+The following registers are absorbed into counter <clk_count>: 1 register on signal <clk_count>.
+Unit <DCT_2D> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 1x1-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 2
+ 11-bit adder                                          : 2
+# Counters                                             : 2
+ 11-bit up counter                                     : 2
+# Registers                                            : 2305
+ Flip-Flops                                            : 2305
+# Multiplexers                                         : 1385
+ 1-bit 2-to-1 multiplexer                              : 1248
+ 32-bit 2-to-1 multiplexer                             : 137
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch valid hinder the constant cleaning in the block DCT_2D.
+   You should achieve better results by setting this init to 1.
+
+Optimizing unit <Compressor> ...
+
+Optimizing unit <DCT_2D> ...
+
+Optimizing unit <DCT_1D> ...
+
+Optimizing unit <Stage1> ...
+
+Optimizing unit <Stage2> ...
+
+Optimizing unit <Stage3> ...
+
+Optimizing unit <Stage5> ...
+
+Optimizing unit <Quantisation> ...
+
+Optimizing unit <floatTofix> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Compressor, actual ratio is 95.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 2327
+ Flip-Flops                                            : 2327
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Compressor.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 201552
+#      GND                         : 188
+#      INV                         : 527
+#      LUT1                        : 518
+#      LUT2                        : 14515
+#      LUT3                        : 55605
+#      LUT4                        : 4031
+#      LUT5                        : 5368
+#      LUT6                        : 13721
+#      MUXCY                       : 53253
+#      MUXF7                       : 195
+#      MUXF8                       : 64
+#      VCC                         : 188
+#      XORCY                       : 53379
+# FlipFlops/Latches                : 150145
+#      FD                          : 3593
+#      FDE                         : 140278
+#      FDR                         : 755
+#      FDRE                        : 5519
+# Shift Registers                  : 3713
+#      SRLC16E                     : 2273
+#      SRLC32E                     : 1440
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 4099
+#      IBUF                        : 2050
+#      OBUF                        : 2049
+# DSPs                             : 80
+#      DSP48E1                     : 80
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:           150145  out of  106400   141% (*) 
+ Number of Slice LUTs:                97998  out of  53200   184% (*) 
+    Number used as Logic:             94285  out of  53200   177% (*) 
+    Number used as Memory:             3713  out of  17400    21%  
+       Number used as SRL:             3713
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:  246072
+   Number with an unused Flip Flop:   95927  out of  246072    38%  
+   Number with an unused LUT:         148074  out of  246072    60%  
+   Number of fully used LUT-FF pairs:  2071  out of  246072     0%  
+   Number of unique control sets:        64
+
+IO Utilization: 
+ Number of IOs:                        4100
+ Number of bonded IOBs:                4100  out of    200   2050% (*) 
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+ Number of DSP48E1s:                     80  out of    220    36%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 153938|
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 4.255ns (Maximum Frequency: 235.035MHz)
+   Minimum input arrival time before clock: 4.067ns
+   Maximum output required time after clock: 2.108ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.255ns (frequency: 235.035MHz)
+  Total number of paths / destination ports: 4927887 / 309760
+-------------------------------------------------------------------------
+Delay:               4.255ns (Levels of Logic = 9)
+  Source:            sec_inst (FF)
+  Destination:       sec_inst (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: sec_inst to sec_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SEC:C->out           30   0.282   0.754  sec_inst (sec_net)
+     end scope: 'dct/dct/s1/S34/blk00000001:m_axis_result_tvalid'
+     end scope: 'dct/dct/s1/S34:m_axis_result_tvalid'
+     LUT4:I1->O            6   0.053   0.446  dct/dct/en_valid_1_AND_45_o_SW0 (N10)
+     LUT6:I5->O            2   0.053   0.419  dct/dct/en_valid_1_AND_45_o_1 (dct/dct/en_valid_1_AND_45_o1)
+     LUT2:I1->O           46   0.053   0.641  dct/dct/s2/en_valid_A47_AND_30_o1 (dct/dct/s2/en_valid_A47_AND_30_o)
+     begin scope: 'dct/dct/s2/MN4_1:s_axis_b_tvalid'
+     begin scope: 'dct/dct/s2/MN4_1/blk00000001:s_axis_b_tvalid'
+     SEC:in->out           1   0.053   0.485  sec_inst (sec_net)
+     SEC:in->out           4   0.053   0.433  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.413  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.000  sec_inst (sec_net)
+     SEC:in                    0.011          sec_inst
+    ----------------------------------------
+    Total                      4.255ns (0.664ns logic, 3.591ns route)
+                                       (15.6% logic, 84.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 170814 / 157173
+-------------------------------------------------------------------------
+Offset:              4.067ns (Levels of Logic = 9)
+  Source:            en (PAD)
+  Destination:       sec_inst (FF)
+  Destination Clock: clk rising
+
+  Data Path: en to sec_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           310   0.000   0.848  en_IBUF (en_IBUF)
+     LUT4:I0->O            6   0.053   0.446  dct/dct/en_valid_1_AND_45_o_SW0 (N10)
+     LUT6:I5->O            2   0.053   0.419  dct/dct/en_valid_1_AND_45_o_1 (dct/dct/en_valid_1_AND_45_o1)
+     LUT2:I1->O           46   0.053   0.641  dct/dct/s2/en_valid_A47_AND_30_o1 (dct/dct/s2/en_valid_A47_AND_30_o)
+     begin scope: 'dct/dct/s2/MN4_1:s_axis_b_tvalid'
+     begin scope: 'dct/dct/s2/MN4_1/blk00000001:s_axis_b_tvalid'
+     SEC:in->out           1   0.053   0.485  sec_inst (sec_net)
+     SEC:in->out           4   0.053   0.433  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.413  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.000  sec_inst (sec_net)
+     SEC:in                    0.011          sec_inst
+    ----------------------------------------
+    Total                      4.067ns (0.382ns logic, 3.685ns route)
+                                       (9.4% logic, 90.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 2112 / 2049
+-------------------------------------------------------------------------
+Offset:              2.108ns (Levels of Logic = 13)
+  Source:            sec_inst (FF)
+  Destination:       valid (PAD)
+  Source Clock:      clk rising
+
+  Data Path: sec_inst to valid
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SEC:C->out            8   0.282   0.785  sec_inst (sec_net)
+     end scope: 'f2f/conv27/blk00000001:m_axis_result_tvalid'
+     end scope: 'f2f/conv27:m_axis_result_tvalid'
+     LUT6:I0->O            1   0.053   0.000  f2f/valid_wg_lut<1> (f2f/valid_wg_lut<1>)
+     MUXCY:S->O            1   0.291   0.000  f2f/valid_wg_cy<1> (f2f/valid_wg_cy<1>)
+     MUXCY:CI->O           1   0.015   0.000  f2f/valid_wg_cy<2> (f2f/valid_wg_cy<2>)
+     MUXCY:CI->O           1   0.015   0.000  f2f/valid_wg_cy<3> (f2f/valid_wg_cy<3>)
+     MUXCY:CI->O           1   0.015   0.000  f2f/valid_wg_cy<4> (f2f/valid_wg_cy<4>)
+     MUXCY:CI->O           1   0.015   0.000  f2f/valid_wg_cy<5> (f2f/valid_wg_cy<5>)
+     MUXCY:CI->O           1   0.015   0.000  f2f/valid_wg_cy<6> (f2f/valid_wg_cy<6>)
+     MUXCY:CI->O           1   0.015   0.000  f2f/valid_wg_cy<7> (f2f/valid_wg_cy<7>)
+     MUXCY:CI->O           1   0.015   0.000  f2f/valid_wg_cy<8> (f2f/valid_wg_cy<8>)
+     MUXCY:CI->O           1   0.015   0.000  f2f/valid_wg_cy<9> (f2f/valid_wg_cy<9>)
+     MUXCY:CI->O           1   0.178   0.399  f2f/valid_wg_cy<10> (valid_OBUF)
+     OBUF:I->O                 0.000          valid_OBUF (valid)
+    ----------------------------------------
+    Total                      2.108ns (0.924ns logic, 1.184ns route)
+                                       (43.8% logic, 56.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.255|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 240.00 secs
+Total CPU time to Xst completion: 240.24 secs
+ 
+--> 
+
+Total memory usage is 1398780 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :  289 (   0 filtered)
+

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="D:/JPEG_compression.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Compressor.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Compressor.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Compressor.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Compressor.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Compressor.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Compressor.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Compressor.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Compressor.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Compressor_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Compressor_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Compressor_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Compressor_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Compressor_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Compressor_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="D:/ipcore_dir/coregen.log"/>
+    <file xil_pn:fileType="FILE_USERDOC" xil_pn:name="D:/ipcore_dir/floatToFixConv_readme.txt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="DCT_2D.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="DCT_2D.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="DCT_2D.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="DCT_2D.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="DCT_2D.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="DCT_2D.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DCT_2D.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="DCT_2D.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="DCT_2D.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="DCT_2D.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="DCT_2D_envsettings.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="DCT_2D_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="DCT_2D_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="DCT_2D_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="DCT_2D_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="DCT_2D_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DCT_2D_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="DCT_2D_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="DCT_2D_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="DCT_2D_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1510772106" xil_pn:in_ck="5819306814264173188" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1510772106">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1510771827" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7201346092492365657" xil_pn:start_ts="1510771827">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510771827" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4106270911188017827" xil_pn:start_ts="1510771827">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510772106" xil_pn:in_ck="-2349448071088214746" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="5479383518947302113" xil_pn:start_ts="1510772106">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <outfile xil_pn:name="D:/ipcore_dir/Adder.ngc"/>
+      <outfile xil_pn:name="D:/ipcore_dir/Adder.v"/>
+      <outfile xil_pn:name="D:/ipcore_dir/Divider.ngc"/>
+      <outfile xil_pn:name="D:/ipcore_dir/Divider.v"/>
+      <outfile xil_pn:name="D:/ipcore_dir/Multiplier.ngc"/>
+      <outfile xil_pn:name="D:/ipcore_dir/Multiplier.v"/>
+      <outfile xil_pn:name="D:/ipcore_dir/Subtracter.ngc"/>
+      <outfile xil_pn:name="D:/ipcore_dir/Subtracter.v"/>
+      <outfile xil_pn:name="D:/ipcore_dir/floatToFixConv.ngc"/>
+      <outfile xil_pn:name="D:/ipcore_dir/floatToFixConv.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1510772106" xil_pn:in_ck="-8808803349208800090" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1510772106">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1510772117" xil_pn:in_ck="-8808803349208800090" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4193243667439715796" xil_pn:start_ts="1510772106">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1510772117" xil_pn:in_ck="5759331593060136663" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="5745526360135229047" xil_pn:start_ts="1510772117">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1510806681" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1882125200987529077" xil_pn:start_ts="1510806681">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510806681" xil_pn:in_ck="-2349448071088214746" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="1439514943672415556" xil_pn:start_ts="1510806681">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="D:/ipcore_dir/Adder.ngc"/>
+      <outfile xil_pn:name="D:/ipcore_dir/Adder.v"/>
+      <outfile xil_pn:name="D:/ipcore_dir/Divider.ngc"/>
+      <outfile xil_pn:name="D:/ipcore_dir/Divider.v"/>
+      <outfile xil_pn:name="D:/ipcore_dir/Multiplier.ngc"/>
+      <outfile xil_pn:name="D:/ipcore_dir/Multiplier.v"/>
+      <outfile xil_pn:name="D:/ipcore_dir/Subtracter.ngc"/>
+      <outfile xil_pn:name="D:/ipcore_dir/Subtracter.v"/>
+      <outfile xil_pn:name="D:/ipcore_dir/floatToFixConv.ngc"/>
+      <outfile xil_pn:name="D:/ipcore_dir/floatToFixConv.v"/>
+    </transform>
+    <transform xil_pn:name="TRAN_SubProjectAbstractToPreProxy">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510806681" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="7819618024184233991" xil_pn:start_ts="1510806681">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510804385" xil_pn:in_ck="4760170629096386289" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="8962985228163542118" xil_pn:start_ts="1510804385">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510806681" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="9215329058214054286" xil_pn:start_ts="1510806681">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510807637" xil_pn:in_ck="-8198874882546271537" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-3780673207557374375" xil_pn:start_ts="1510807547">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="DCT_2D.lso"/>
+      <outfile xil_pn:name="DCT_2D.ngc"/>
+      <outfile xil_pn:name="DCT_2D.ngr"/>
+      <outfile xil_pn:name="DCT_2D.prj"/>
+      <outfile xil_pn:name="DCT_2D.stx"/>
+      <outfile xil_pn:name="DCT_2D.syr"/>
+      <outfile xil_pn:name="DCT_2D.xst"/>
+      <outfile xil_pn:name="DCT_2D_tb_beh.prj"/>
+      <outfile xil_pn:name="DCT_2D_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1510807827" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="5069202360117456946" xil_pn:start_ts="1510807827">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1510807924" xil_pn:in_ck="7348452379550266561" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3075628606496757832" xil_pn:start_ts="1510807827">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="DCT_2D.bld"/>
+      <outfile xil_pn:name="DCT_2D.ngd"/>
+      <outfile xil_pn:name="DCT_2D_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1510808003" xil_pn:in_ck="-5372650073058978819" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="6343818628637911857" xil_pn:start_ts="1510807924">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="DCT_2D_map.map"/>
+      <outfile xil_pn:name="DCT_2D_map.mrp"/>
+      <outfile xil_pn:name="DCT_2D_map.ngm"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+  </transforms>
+
+</generated_project>

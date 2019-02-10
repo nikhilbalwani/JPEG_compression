@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/JPEG_compression/Compressor.xst" -ofn "D:/JPEG_compression/Compressor.syr" 
+xst -intstyle ise -ifn "D:/JPEG_compression/Compressor.xst" -ofn "D:/JPEG_compression/Compressor.syr" 
